@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  atcoder_golang:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/root/atcoder_golang/
+    tty: true
